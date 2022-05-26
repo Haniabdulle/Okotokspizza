@@ -1,0 +1,37 @@
+p{
+    color: crimson;
+}
+
+h1:hover {
+    font-size: 30px;
+    color: orange;
+    }
+ h3:active { color:green
+
+ }
+
+ a:link {
+    font-weight: bold;
+    color:rgb(128, 0, 0);
+    }
+
+    a:visited {
+        color: rgb(224, 192, 255);
+        }
+
+        p:nth-child(1) {
+            font-weight: bold;
+            }
+
+           
+#More-content h2{
+color:purple;
+} 
+
+#Ingredients h4 + p{
+    color: teal;
+}
+
+        
+            
+        
