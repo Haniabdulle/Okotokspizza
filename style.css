@@ -1,4 +1,11 @@
+
+.grid-container{ display: grid;
+
+}
+
+
 p{
+
     color: crimson;
 }
 
@@ -30,7 +37,11 @@ color:purple;
 
 #Ingredients h4 + p{
     color: teal;
+
 }
+
+
+
 
         
             
