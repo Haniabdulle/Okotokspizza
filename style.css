@@ -1,19 +1,283 @@
 
-.grid-container{ display: grid;
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{ font-family: 'poppons', sans-serif;
+    background-color: black;
 
 }
 
 
-p{
 
-    color: crimson;
+html{
+    font-size: 62.5% ;
 }
 
-h1:hover {
-    font-size: 30px;
+.header{
+    height: 90vh;
+    position: relative;
+}
+
+.navbar{
+    height: 110px;
+    outline: 2px;
+    width: 100%;
+    background-color: transparent;
+    background-image: url(Backgroundhome.jpg);
+    background-size: cover;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 0 40px;
+    z-index: 10;
+    position: fixed;
+
+}
+
+.navbar-box{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.heading-teritary{
+    font-size: 3.5rem
+   
+
+}
+
+.navbar-list{
+    list-style: none;
+    font-size: 2rem;
+    
+
+}
+
+.navbar-items{
+    display: inline-block ;
+    
+}
+
+.navbar-link:hover{
+    background-color: #da6;
+    color: white;
+}
+
+.navbar-link:visited,
+.navbar-link:Link{
+    text-decoration: none;
+    color: white;
+    padding: 2rem 3.5rem;
+    border: 1px salmon;
+    box-shadow: 0 0 1rem rgba(236, 118, 40, 5);
+    text-shadow: 0 .3rem  1rem ;
+
+}
+
+.navbar-link:visited,
+.navbar-link:link{
+    text-decoration: none;
+    color: white;
+    padding: 3rem;
+    transition: all 2s ease;
+    border:1px solid orange;
+    border-radius: 200px;
+    box-shadow:0  0. 1rem(236, 118, 40, .5);
+    text-shadow: 0 ,3rem 1rem rgb(225,255,255, .5) ;
+
+}
+
+.navbar-link-book:hover{
+    background-color: orange;
+    color: white;
+  
+
+
+}
+
+.toggle{
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+
+.toggle div{
+    height: 4px;
+    width: 100%;
+    background-color:white ;
+    margin: 1rem;
+}
+.Header-container{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.Header-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.Heading-primary{
+    font-size: 6.5rem ;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+}
+
+#Restaurent{
     color: orange;
-    }
- h3:active { color:green
+    font-weight: 800;
+    font-size: 8rem;
+
+}
+
+.lead{
+    font-size: 1.9rem;
+    font-weight:600 ;
+    letter-spacing: 4px;
+
+}
+
+
+.Book-now:visited,
+.Book-now:link{
+  text-decoration: none;  
+  display: inline block;
+  color: white;
+  font-size: 2rem;
+  margin-top: 4rem;
+  border: 1px solid white;
+
+  border-radius: 100px;
+  transition: all 3s ease;
+  box-shadow: 0 1rem 1rem rgba(240, 107, 55, 1);
+  text-shadow:0 1rem  1rem rgba(0, 0, 0, 6) ;
+
+
+
+}
+
+.Book-now:hover{
+    background-color: orange;
+    border: 1px solid white;
+    box-shadow: 0 0 2rem rgba(240,107,55, .8);
+}
+
+
+.Menu{
+    width: 100%;
+    padding: 10rem 5rem;
+    background-image: linear-gradient(to right bottom, rgba(225,81,0), rgba(225,0,0,5)
+    );
+  
+
+}
+
+.Menu-heading{
+    font-size: 12rem;
+    text-align: center;
+    text-shadow: 0 0 1rem rgba(0,0,0,9) ;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+
+}
+
+.Menu-grid{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns:repeat( 4, 1fr);
+    justify-self: center;
+    grid-gap: 2rem;
+}
+
+.heading-secondary{
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+
+
+}
+
+.Menu-img{
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url(Pizzahomepage.jpg);
+
+}
+
+
+    
+    
+
+
+
+.Menu-container{
+    width: 100%;
+    height: 50rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 2);
+    transition: all .4s ease;
+
+
+}
+
+.Menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 4);
+    transform: scale(1.07)
+
+
+}
+
+.Menu-p{
+font-size: 1.4rem;
+padding: 1rem;
+text-align: center;
+
+}
+
+.Menu-title{
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.price{
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #da6;
+    text-shadow:0 .4rem 2rem rgba(0,0,0,4) ;
+
+
+}
+
+
+
+
+
+
+.h3:active { color:green
 
  }
 
